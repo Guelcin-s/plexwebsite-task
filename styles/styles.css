@@ -1,0 +1,161 @@
+body{
+    font-family: 'Varela Round', sans-serif;
+}
+.header{
+    position: relative;
+    color: white;
+    background-image: url(../img/Image\ 16.03.20\ at\ 23.15.jpeg);
+    background-size: cover;
+    height: 50vh;
+    min-height: 650px; 
+}
+.header .style{
+    background-color: rgba(45, 41, 41, 0.735);
+    height: 100%;
+}
+.header .style .tools{
+    display: flex;
+}
+.header .style .tools .logo{
+    width: 60%;
+    position: relative;
+    left: 85px;
+    padding-top: 50px; 
+}
+.header .logo{
+    width: 100%;
+}
+.header .logo img{
+    width: 100px;
+}
+.header .style .tools ul{
+    display: flex;
+    list-style: none;
+    width: 100%;
+    margin-left: 0 auto;
+} 
+ #menu-header {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    white-space: nowrap;
+    padding-top: 40px;
+}  
+#menu-header a{
+    text-decoration: none;
+    color: white; 
+    font-size: 17px;
+    padding-right: 25px;
+    margin-right: 0 auto;
+}  
+#container{
+    position: relative;
+    left:-80px;
+}
+#sign{
+    position: relative;
+    left:-60px;
+}
+#sign .button{
+    background-color: rgb(242, 168, 9);
+    border: none;
+    border-radius: 35px;
+    color: white;
+    padding: 15px 20px 15px 40px;
+    margin-top: -14px;
+    cursor: pointer;
+}
+.header .hero-header{
+    text-align: center;
+}
+.header .hero-header h1{
+    font-size: 50px;
+}
+.header .hero-header p{
+    font-size: 18px;
+    font-style: bold; 
+    margin-top: 5px;
+    color: rgba(225, 218, 218, 0.66); 
+}
+.panel {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 2px;
+    position: absolute;
+    bottom: 0; 
+    top:350px;
+}
+.panel .select{
+    position: relative;
+    background-color: rgba(35, 32, 32, 0.427);
+    height: 300px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.select{
+    transition: all .2s ease-in-out;
+    background:rgba(40, 42, 45, .5)
+}
+
+.header .panel p{
+    color: rgba(191, 180, 180, 0.66);
+}
+.select:hover h3,
+.select:hover p{
+    color:rgba(35, 32, 32, 0.948);
+}
+.select:hover {
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, .1);
+    transform: scale(1.02);
+}
+.header .panel .select{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1;
+    grid-template-areas: 
+        "z z z z"
+        "l l l l"
+        "m m m m"
+        "h h h h";
+}
+.panel .select #icons{
+    grid-area: z;
+    color: white;
+    position: absolute;
+    left:50px;
+ 
+}
+.header .select h3{
+    grid-area: l;
+    position: absolute;
+    top:-40px;
+}
+.header .select p{
+    grid-area: m;
+    position: absolute;
+    top: -50px;
+    font-size: 16px;
+    width: 21vw;
+}
+.header .select span{
+    grid-area: h;
+    position: absolute;
+    top: 10px;
+    bottom: -10px;
+    text-align: center;
+    
+    width: 200px;
+    height: 20px;
+    font-size: 15px;
+
+    background-color: rgb(242, 168, 9);
+    border: none;
+    border-radius: 35px;
+    color: white;
+    padding:10px 10px 10px 10px;
+   
+    cursor: pointer;
+}
